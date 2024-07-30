@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         Cliente newClient = new Cliente();
-        newClient.getNome();
+      //  newClient.getNome();
         newClient.getIdade();
 
         System.out.println("Seu nome: " + newClient.getNome());
@@ -43,15 +43,15 @@ public class Main {
                     break;
 
 
-                Conta corrente = new ContaCorrente(newClient);
-                corrente.depositar(500);
+               // Conta corrente = new ContaCorrente(newClient);
+               // corrente.depositar(500);
 
-                Conta poupanca = new ContaPoupanca(newClient);
+               // Conta poupanca = new ContaPoupanca(newClient);
 
-                corrente.transferir(50, poupanca);
+               // corrente.transferir(50, poupanca);
 
-                corrente.imprimirExtrato();
-                poupanca.imprimirExtrato();
+               // corrente.imprimirExtrato();
+                //poupanca.imprimirExtrato();
             }
         }
     }
